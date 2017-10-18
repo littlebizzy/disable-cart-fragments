@@ -5,9 +5,10 @@ Tags: disable, cart, fragments, remove, woocommerce, checkout, ajax, javascript
 Requires at least: 4.4
 Tested up to: 4.8
 Requires PHP: 7.0
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Prefix: DSCFRG
 
 Completely disables the AJAX cart fragments feature in WooCommerce for a huge boost in loading speed (redirect to cart page highly recommended).
 
@@ -107,24 +108,28 @@ Please avoid leaving negative reviews in order to get a feature implemented. Ins
 
 == Changelog ==
 
+= 1.0.7 =
+* optimize plugin structure
+* update recommended plugins
+
 = 1.0.6 =
 * minor code tweaks
-* updated recommended plugins
+* update recommended plugins
 
 = 1.0.5 =
-* updated recommended plugins
+* update recommended plugins
 
 = 1.0.4 =
-* recommended plugins
+* add recommended plugins
 
 = 1.0.3 =
-* tested with WordPress 4.8
+* test with WordPress 4.8
 
 = 1.0.2 =
-* updated plugin meta
+* update plugin meta
 
 = 1.0.1 =
-* updated plugin meta
+* update plugin meta
 
 = 1.0.0 =
 * initial release
