@@ -11,6 +11,10 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Prefix: DSCFRG
 */
 
+// Admin Notices module
+require_once dirname(__FILE__).'/admin-notices.php';
+DSCFRG_Admin_Notices::instance(__FILE__);
+
 
 /* Initialization */
 
@@ -22,11 +26,6 @@ if (!function_exists('add_action'))
 define('DSCFRG_FILE', __FILE__);
 define('DSCFRG_PATH', dirname(DSCFRG_FILE));
 define('DSCFRG_VERSION', '1.0.7');
-
-// Admin Notices module
-require_once(DSCFRG_PATH.'/admin-notices.php');
-DSCFRG_Admin_Notices::instance(DSCFRG_FILE);
-register_uninstall_hook(__FILE__, array('DSCFRG_Admin_Notices', 'uninstall'));
 
 
 /* Disable Cart Fragments */
