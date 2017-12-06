@@ -189,6 +189,7 @@ Please avoid leaving negative reviews in order to get a feature implemented. Ins
 == Changelog ==
 
 = 1.0.8 =
+* tested with WP 4.9
 * added support for `define('DISABLE_NAG_NOTICES', true);`
 
 = 1.0.7 =
@@ -207,7 +208,7 @@ Please avoid leaving negative reviews in order to get a feature implemented. Ins
 * added recommended plugins
 
 = 1.0.3 =
-* tested with WordPress 4.8
+* tested with WP 4.8
 
 = 1.0.2 =
 * updated plugin meta
