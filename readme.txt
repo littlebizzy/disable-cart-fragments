@@ -1,6 +1,7 @@
 === Disable Cart Fragments ===
 
 Contributors: littlebizzy
+Donate link: https://www.patreon.com/littlebizzy
 Tags: disable, remove, cart, fragments, ajax
 Requires at least: 4.4
 Tested up to: 4.9
