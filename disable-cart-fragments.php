@@ -3,7 +3,7 @@
 Plugin Name: Disable Cart Fragments
 Plugin URI: https://www.littlebizzy.com/plugins/disable-cart-fragments
 Description: Completely disables the AJAX cart fragments feature in WooCommerce for a huge boost in loading speed (redirect to cart page highly recommended).
-Version: 1.0.8
+Version: 1.0.9
 Author: LittleBizzy
 Author URI: https://www.littlebizzy.com
 License: GPLv3
@@ -15,8 +15,14 @@ Prefix: DSCFRG
 require_once dirname(__FILE__).'/admin-notices.php';
 DSCFRG_Admin_Notices::instance(__FILE__);
 
-
-/* Initialization */
+/**
+ * Admin Notices Multisite check
+ * Uncomment //return to disable this plugin on Multisite installs
+ */
+require_once dirname(__FILE__).'/admin-notices-ms.php';
+if (false !== \LittleBizzy\DisableCartFragments\Admin_Notices_MS::instance(__FILE__)) {
+	//return;
+}
 
 // Block direct calls
 if (!function_exists('add_action'))
@@ -25,7 +31,7 @@ if (!function_exists('add_action'))
 // Plugin constants
 define('DSCFRG_FILE', __FILE__);
 define('DSCFRG_PATH', dirname(DSCFRG_FILE));
-define('DSCFRG_VERSION', '1.0.8');
+define('DSCFRG_VERSION', '1.0.9');
 
 
 /* Disable Cart Fragments */
