@@ -18,9 +18,12 @@ Completely disables the AJAX cart fragments feature in WooCommerce for a huge bo
 
 Completely disables the AJAX cart fragments feature in WooCommerce for a huge boost in loading speed (redirect to cart page highly recommended).
 
+* [**Join our FREE Facebook group for support!**](https://www.facebook.com/groups/littlebizzy/)
 * [Plugin Homepage](https://www.littlebizzy.com/plugins/disable-cart-fragments)
 * [Plugin GitHub](https://github.com/littlebizzy/disable-cart-fragments)
-* [SlickStack](https://slickstack.io)
+* [SlickStack (LEMP stack automation)](https://slickstack.io)
+* [Starter (lighting fast custom theme)](https://starter.littlebizzy.com)
+* [WP Lite](https://wplite.org)
 
 #### The Long Version ####
 
@@ -83,15 +86,18 @@ We invite you to check out a few other related free plugins that our team has al
 
 * [404 To Homepage](https://wordpress.org/plugins/404-to-homepage-littlebizzy/)
 * [CloudFlare](https://wordpress.org/plugins/cf-littlebizzy/)
+* [Delete Expired Transients](https://wordpress.org/plugins/delete-expired-transients-littlebizzy/)
+* [Disable Admin-AJAX](https://wordpress.org/plugins/disable-admin-ajax-littlebizzy/)
 * [Disable Author Pages](https://wordpress.org/plugins/disable-author-pages-littlebizzy/)
 * [Disable Cart Fragments](https://wordpress.org/plugins/disable-cart-fragments-littlebizzy/)
 * [Disable Embeds](https://wordpress.org/plugins/disable-embeds-littlebizzy/)
 * [Disable Emojis](https://wordpress.org/plugins/disable-emojis-littlebizzy/)
 * [Disable Empty Trash](https://wordpress.org/plugins/disable-empty-trash-littlebizzy/)
 * [Disable Image Compression](https://wordpress.org/plugins/disable-image-compression-littlebizzy/)
+* [Disable jQuery Migrate](https://wordpress.org/plugins/disable-jq-migrate-littlebizzy/)
 * [Disable Search](https://wordpress.org/plugins/disable-search-littlebizzy/)
 * [Disable WooCommerce Status](https://wordpress.org/plugins/disable-wc-status-littlebizzy/)
-* [Disable WooCommerce Styles](https://wordpress.org/plugins/diable-wc-styles-littlebizzy/)
+* [Disable WooCommerce Styles](https://wordpress.org/plugins/disable-wc-styles-littlebizzy/)
 * [Disable XML-RPC](https://wordpress.org/plugins/disable-xml-rpc-littlebizzy/)
 * [Download Media](https://wordpress.org/plugins/download-media-littlebizzy/)
 * [Download Plugin](https://wordpress.org/plugins/download-plugin-littlebizzy/)
@@ -101,6 +107,7 @@ We invite you to check out a few other related free plugins that our team has al
 * [Force HTTPS](https://wordpress.org/plugins/force-https-littlebizzy/)
 * [Force Strong Hashing](https://wordpress.org/plugins/force-strong-hashing-littlebizzy/)
 * [Google Analytics](https://wordpress.org/plugins/ga-littlebizzy/)
+* [Header Cleanup](https://wordpress.org/plugins/header-cleanup-littlebizzy/)
 * [Index Autoload](https://wordpress.org/plugins/index-autoload-littlebizzy/)
 * [Maintenance Mode](https://wordpress.org/plugins/maintenance-mode-littlebizzy/)
 * [Profile Change Alerts](https://wordpress.org/plugins/profile-change-alerts-littlebizzy/)
@@ -115,33 +122,24 @@ We invite you to check out a few other related free plugins that our team has al
 
 We invite you to check out a few premium plugins that our team has also produced that you may find especially useful:
 
-* [Purge Them All](https://www.littlebizzy.com/plugins/purge-them-all)
 * [Speed Demon](https://www.littlebizzy.com/plugins/speed-demon)
 * [SEO Genius](https://www.littlebizzy.com/plugins/seo-genius)
 * [Great Migration](https://www.littlebizzy.com/plugins/great-migration)
 * [Security Guard](https://www.littlebizzy.com/plugins/security-guard)
 * [Genghis Khan](https://www.littlebizzy.com/plugins/genghis-khan)
 
-#### Related Services ####
-
-The following paid services are available on a case-by-case basis to upstanding members of the WordPress community:
-
-* [SSL Setup](https://www.littlebizzy.com/services/ssl)
-* [DNSSEC Setup](https://www.littlebizzy.com/services/dnssec)
-* [G Suite Setup](https://www.littlebizzy.com/services/google-apps)
-* [SendGrid Setup](https://www.littlebizzy.com/services/sendgrid)
-* [MailGun Setup](https://www.littlebizzy.com/services/mailgun)
-
 #### Special Thanks ####
 
 We thank the following groups for their generous contributions to the WordPress community which have particularly benefited us in developing our own free plugins and paid services:
 
 * [Automattic](https://automattic.com)
+* [Brad Touesnard](https://bradt.ca)
 * [Daniel Auener](http://www.danielauener.com)
 * [Delicious Brains](https://deliciousbrains.com)
 * [Greg Rickaby](https://gregrickaby.com)
 * [Matt Mullenweg](https://ma.tt)
 * [Mika Epstein](https://halfelf.org)
+* [Mike Garrett](https://mikengarrett.com)
 * [Samuel Wood](http://ottopress.com)
 * [Scott Reilly](http://coffee2code.com)
 * [Jan Dembowski](https://profiles.wordpress.org/jdembowski)
@@ -153,6 +151,7 @@ We thank the following groups for their generous contributions to the WordPress 
 * [Rahul Bansal](https://profiles.wordpress.org/rahul286)
 * [Roots](https://roots.io)
 * [rtCamp](https://rtcamp.com)
+* [Ryan Hellyer](https://geek.hellyer.kiwi)
 * [WP Chat](https://wpchat.com)
 * [WP Tavern](https://wptavern.com)
 
