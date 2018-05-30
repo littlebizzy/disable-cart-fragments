@@ -7,7 +7,7 @@ Requires at least: 4.4
 Tested up to: 4.9
 Requires PHP: 7.0
 Multisite support: No
-Stable tag: 1.0.9
+Stable tag: 1.1.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Prefix: DSCFRG
@@ -188,18 +188,21 @@ Please avoid leaving negative reviews in order to get a feature implemented. Ins
 
 == Changelog ==
 
+= 1.1.0 =
+* support for WooCommerce 3.4+
+
 = 1.0.9 =
 * added warning for Multisite installations
 * updated recommended plugins
 
 = 1.0.8 =
 * tested with WP 4.9
-* added support for `define('DISABLE_NAG_NOTICES', true);`
+* support for `DISABLE_NAG_NOTICES`
 
 = 1.0.7 =
 * optimized plugin code
+* added rating request notice
 * updated recommended plugins
-* added rating request
 
 = 1.0.6 =
 * minor code tweaks
@@ -209,7 +212,7 @@ Please avoid leaving negative reviews in order to get a feature implemented. Ins
 * updated recommended plugins
 
 = 1.0.4 =
-* added recommended plugin notices
+* added recommended plugins notice
 
 = 1.0.3 =
 * tested with WP 4.8
