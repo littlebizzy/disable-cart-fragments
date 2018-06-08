@@ -1,12 +1,15 @@
 <?php
 
+// Subpackage namespace
+namespace LittleBizzy\DisableCartFragments;
+
 /**
  * Admin Notices class
  *
  * @package WordPress
  * @subpackage Admin Notices
  */
-final class DSCFRG_Admin_Notices {
+final class Admin_Notices {
 
 
 
@@ -123,15 +126,14 @@ final class DSCFRG_Admin_Notices {
 	 */
 	private function __construct($plugin_file = null) {
 
+		// Prefix from plugin constants
+		$this->prefix = PREFIX.'_an_';
+
 		// Main plugin file
 		$this->plugin_file = isset($plugin_file)? $plugin_file : __FILE__;
 
 		// Uninstall hook endpoint
 		register_uninstall_hook($this->plugin_file, array(__CLASS__, 'uninstall'));
-
-		// Prefix from the class name
-		$classname = explode('_', __CLASS__);
-		$this->prefix = strtolower($classname[0]);
 
 		// Check notices
 		if (is_admin()) {
@@ -170,11 +172,11 @@ final class DSCFRG_Admin_Notices {
 
 			// Check AJAX submit
 			if (defined('DOING_AJAX') && DOING_AJAX) {
-				add_action('wp_ajax_'.$this->prefix.'_dismiss_suggestions', array(&$this, 'dismiss_suggestions'));
+				add_action('wp_ajax_'.$this->prefix.'_dismiss_suggestions', array($this, 'dismiss_suggestions'));
 
 			// Admin area (except install or activate plugins page)
 			} elseif (!in_array(basename($_SERVER['PHP_SELF']), array('plugins.php', 'plugin-install.php', 'update.php'))) {
-				add_action('wp_loaded', array(&$this, 'load_notices_suggestions'), PHP_INT_MAX);
+				add_action('wp_loaded', array($this, 'load_notices_suggestions'), PHP_INT_MAX);
 			}
 		}
 	}
@@ -196,11 +198,11 @@ final class DSCFRG_Admin_Notices {
 
 				// Check AJAX submit
 				if (defined('DOING_AJAX') && DOING_AJAX) {
-					add_action('wp_ajax_'.$this->prefix.'_dismiss_rate_us', array(&$this, 'dismiss_rate_us'));
+					add_action('wp_ajax_'.$this->prefix.'_dismiss_rate_us', array($this, 'dismiss_rate_us'));
 
 				// Admin area (except install or activate plugins page)
 				} elseif (!in_array(basename($_SERVER['PHP_SELF']), array('plugins.php', 'plugin-install.php', 'update.php'))) {
-					add_action('wp_loaded', array(&$this, 'load_notices_rate_us'), PHP_INT_MAX);
+					add_action('wp_loaded', array($this, 'load_notices_rate_us'), PHP_INT_MAX);
 				}
 			}
 		}
@@ -225,8 +227,8 @@ final class DSCFRG_Admin_Notices {
 		// Collect missing plugins
 		$this->missing = $this->get_missing_plugins();
 		if (!empty($this->missing) && is_array($this->missing)) {
-			add_action('admin_footer', array(&$this, 'admin_footer_suggestions'));
-			add_action('admin_notices', array(&$this, 'admin_notices_suggestions'));
+			add_action('admin_footer', array($this, 'admin_footer_suggestions'));
+			add_action('admin_notices', array($this, 'admin_notices_suggestions'));
 		}
 	}
 
@@ -242,8 +244,8 @@ final class DSCFRG_Admin_Notices {
 			return;
 
 		// Admin hooks
-		add_action('admin_footer',  array(&$this, 'admin_footer_rate_us'));
-		add_action('admin_notices', array(&$this, 'admin_notices_rate_us'));
+		add_action('admin_footer',  array($this, 'admin_footer_rate_us'));
+		add_action('admin_notices', array($this, 'admin_notices_rate_us'));
 	}
 
 
