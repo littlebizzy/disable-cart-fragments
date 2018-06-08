@@ -129,7 +129,7 @@ final class Admin_Notices {
 	private function __construct($plugin_file = null) {
 
 		// Prefix from plugin constants
-		$this->prefix = Plugin\PREFIX.'_an_';
+		$this->prefix = Plugin\PREFIX.'_an';
 
 		// Main plugin file
 		$this->plugin_file = isset($plugin_file)? $plugin_file : __FILE__;
@@ -477,6 +477,7 @@ final class Admin_Notices {
 
 	// Activation timestamp management
 	// ---------------------------------------------------------------------------------------------------
+
 
 
 	/**
