@@ -1,7 +1,7 @@
 <?php
 
 // Subpackage namespace
-namespace LittleBizzy\DisableCartFragments;
+namespace LittleBizzy\DisableCartFragments\Notices;
 
 /**
  * Admin Notices MultiSite class

@@ -1,7 +1,10 @@
 <?php
 
 // Subpackage namespace
-namespace LittleBizzy\DisableCartFragments;
+namespace LittleBizzy\DisableCartFragments\Notices;
+
+// Aliased namespaces
+use LittleBizzy\DisableCartFragments as Plugin;
 
 /**
  * Admin Notices class
@@ -76,10 +79,9 @@ final class Admin_Notices {
 
 
 	/**
-	 * Default prefix
-	 * Can be changed by the external initialization.
+	 * Plugin prefix
 	 */
-	private $prefix = 'lbladn';
+	private $prefix;
 
 
 
@@ -127,7 +129,7 @@ final class Admin_Notices {
 	private function __construct($plugin_file = null) {
 
 		// Prefix from plugin constants
-		$this->prefix = PREFIX.'_an_';
+		$this->prefix = Plugin\PREFIX.'_an_';
 
 		// Main plugin file
 		$this->plugin_file = isset($plugin_file)? $plugin_file : __FILE__;
