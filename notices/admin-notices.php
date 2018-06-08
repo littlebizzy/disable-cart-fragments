@@ -9,7 +9,7 @@ use LittleBizzy\DisableCartFragments as Plugin;
 /**
  * Admin Notices class
  *
- * @package WordPress
+ * @package WordPress Plugin
  * @subpackage Admin Notices
  */
 final class Admin_Notices {

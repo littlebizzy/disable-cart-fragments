@@ -6,7 +6,7 @@ namespace LittleBizzy\DisableCartFragments\Helpers;
 /**
  * Runner class
  *
- * @package Disable Cart Fragments
+ * @package WordPress Plugin
  * @subpackage Helpers
  */
 class Runner {

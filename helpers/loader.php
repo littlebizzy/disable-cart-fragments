@@ -6,7 +6,7 @@ namespace LittleBizzy\DisableCartFragments\Helpers;
 /**
  * AutoLoader class
  *
- * @package Disable Cart Fragments
+ * @package WordPress Plugin
  * @subpackage Helpers
  */
 final class Loader {

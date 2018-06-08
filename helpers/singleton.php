@@ -6,7 +6,7 @@ namespace LittleBizzy\DisableCartFragments\Helpers;
 /**
  * Singleton class
  *
- * @package Disable Cart Fragments
+ * @package WordPress Plugin
  * @subpackage Helpers
  */
 abstract class Singleton {

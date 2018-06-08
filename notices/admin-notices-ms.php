@@ -6,7 +6,7 @@ namespace LittleBizzy\DisableCartFragments\Notices;
 /**
  * Admin Notices MultiSite class
  *
- * @package WordPress
+ * @package WordPress Plugin
  * @subpackage Admin Notices MultiSite
  */
 final class Admin_Notices_MS {
