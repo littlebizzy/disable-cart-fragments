@@ -5,9 +5,11 @@ Donate link: https://www.patreon.com/littlebizzy
 Tags: disable, remove, cart, fragments, ajax
 Requires at least: 4.4
 Tested up to: 4.9
+WC requires at least: 3.3
+WC tested up to: 3.4
 Requires PHP: 7.2
 Multisite support: No
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Prefix: DSCFRG
@@ -198,6 +200,9 @@ This plugin does not have a settings page and is designed for speed and simplici
 Please avoid leaving negative reviews in order to get a feature implemented. Instead, we kindly ask that you post your feedback on the wordpress.org support forums by tagging this plugin in your post. If needed, you may also contact our homepage.
 
 == Changelog ==
+
+= 1.1.1 =
+* added WC support plugin headers (meta)
 
 = 1.1.0 =
 * tested with WooCommerce 3.4
