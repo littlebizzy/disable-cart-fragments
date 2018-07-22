@@ -9,7 +9,7 @@ WC requires at least: 3.3
 WC tested up to: 3.4
 Requires PHP: 7.2
 Multisite support: No
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Prefix: DSCFRG
@@ -201,8 +201,11 @@ Please avoid leaving negative reviews in order to get a feature implemented. Ins
 
 == Changelog ==
 
+= 1.1.2 =
+* added WC support plugin headers (meta) to plugin root file
+
 = 1.1.1 =
-* added WC support plugin headers (meta)
+* added WC support plugin headers (meta) to readme
 
 = 1.1.0 =
 * tested with WooCommerce 3.4
