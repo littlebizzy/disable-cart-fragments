@@ -9,7 +9,7 @@ WC requires at least: 3.3
 WC tested up to: 3.4
 Requires PHP: 7.2
 Multisite support: No
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Prefix: DSCFRG
@@ -201,6 +201,9 @@ Please avoid leaving negative reviews in order to get a feature implemented. Ins
 
 == Changelog ==
 
+= 1.1.3 =
+* updated plugin meta
+
 = 1.1.2 =
 * added WC support plugin headers (meta) to plugin root file
 
@@ -211,10 +214,10 @@ Please avoid leaving negative reviews in order to get a feature implemented. Ins
 * tested with WooCommerce 3.4
 * tested with PHP 7.1
 * tested with PHP 7.2
-* tested with alleged conflicting plugins e.g. *WooCommerce Cart*, *WooCommerce Better Usability*
-* plugin re-written with PHP namespaces
-* object-oriented codebase
-* optimized plugin code (e.g. moved notices to new folder)
+* tested with alleged conflicting plugins e.g. *WooCommerce Cart*, *WooCommerce Better Usability*, etc
+* plugin uses PHP namespaces
+* plugin uses object-oriented codebase
+* optimized plugin code (e.g. moved notices to new folder, etc)
 
 = 1.0.9 =
 * added warning for Multisite installations
@@ -250,3 +253,4 @@ Please avoid leaving negative reviews in order to get a feature implemented. Ins
 
 = 1.0.0 =
 * initial release
+* tested with PHP 7.0
