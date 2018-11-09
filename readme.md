@@ -2,8 +2,8 @@
 
 Completely disables the AJAX cart fragments feature in WooCommerce for a huge boost in loading speed (redirect to cart page highly recommended).
 
-* [Download](https://wordpress.org/plugins/disable-cart-fragments-littlebizzy/)
-* [Plugin homepage](https://github.com/littlebizzy/disable-cart-fragments)
+* [Plugin homepage](https://www.littlebizzy.com/plugins/disable-cart-fragments)
+* [Download (WordPress.org)](https://wordpress.org/plugins/disable-cart-fragments-littlebizzy/)
 * [Free Facebook group](https://www.facebook.com/groups/littlebizzy/)
 
 ### Support issues
