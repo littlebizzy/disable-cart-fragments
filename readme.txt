@@ -4,12 +4,12 @@ Contributors: littlebizzy
 Donate link: https://www.patreon.com/littlebizzy
 Tags: disable, remove, cart, fragments, ajax
 Requires at least: 4.4
-Tested up to: 4.9
+Tested up to: 5.0
 WC requires at least: 3.3
 WC tested up to: 3.5
 Requires PHP: 7.2
 Multisite support: No
-Stable tag: 1.2.1
+Stable tag: 1.3.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Prefix: DSCFRG
@@ -24,11 +24,14 @@ Completely disables the AJAX cart fragments feature in WooCommerce for a huge bo
 * [**Worth a 5-star review? Thank you!**](https://wordpress.org/support/plugin/disable-cart-fragments-littlebizzy/reviews/?rate=5#new-post)
 * [Plugin Homepage](https://www.littlebizzy.com/plugins/disable-cart-fragments)
 * [Plugin GitHub](https://github.com/littlebizzy/disable-cart-fragments)
-* [SlickStack](https://slickstack.io)
 
-#### The Long Version ####
+#### Current Features ####
 
 Disable Cart Fragments is a simple plugin that disables the AJAX 'cart fragments' feature in WooCommerce. That feature automatically updates the cart total in your shopping cart without having to refresh the page. The problem with this is that is severely slows down many WooCommerce websites especially on shared hosting servers. Plus, the feature isn't even used in many cases. We recommend that if you install this plugin, you either disable it selectively on certain pages (see the Installation tab) or if installing as one-click then make sure you enable 'redirect to cart page' option in WooCommerce settings so that when a customer adds a product to their Cart, it redirects to the Cart page automatically so as to not confuse them about what happened to their chosen product.
+
+* [Jeff Matson](https://jeffmatson.net/stopping-cart-fragments-from-updating-in-woocommerce/)
+* [GitHub #9365](https://github.com/woocommerce/woocommerce/issues/9365)
+* [GitHub #7777](https://github.com/woocommerce/woocommerce/issues/7777)
 
 This plugin removes e.g.
 
@@ -38,41 +41,44 @@ This plugin removes e.g.
     </script>
     <script type='text/javascript' src='//example.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js'></script>
 
-You can selectively disable using a defined constant:
-
-    define('DISABLE_CART_FRAGMENTS', '123,456,789');
+You can selectively disable using a defined constant (below)
 
 For initial release we've implemented via dequeue rather than print scripts, will review based on feedback.
 
+#### Compatibility ####
+
+This plugin has been designed for use on [SlickStack](https://slickstack.io) web servers with PHP 7.2 and MySQL 5.7 to achieve best performance. All of our plugins are meant for single site WordPress installations only; for both performance and usability reasons, we highly recommend avoiding WordPress Multisite for the vast majority of projects.
+
+Any of our WordPress plugins may also be loaded as "Must-Use" plugins by using our free [Autoloader](https://github.com/littlebizzy/autoloader) script in the `mu-plugins` directory.
+
 #### Defined Constants ####
 
-    `define('DISABLE_NAG_NOTICES', true);`
-    `define('DISABLE_CART_FRAGMENTS', '123,456,789');`
+    /* Plugin Meta */
+    define('DISABLE_NAG_NOTICES', true);
+    
+    /* Disable Cart Fragments Functions */
+    define('DISABLE_CART_FRAGMENTS', 'allpages');
 
 #### Plugin Features ####
 
-* Parent Plugin: [**Speed Demon**](https://www.littlebizzy.com/plugins/speed-demon)
+* Prefix: DSCFRG
+* Parent Plugin: [**Speed Demon**](https://wordpress.org/plugins/speed-demon-littlebizzy/)
 * Disable Nag Notices: [Yes](https://codex.wordpress.org/Plugin_API/Action_Reference/admin_notices#Disable_Nag_Notices)
 * Settings Page: No
 * PHP Namespaces: Yes
 * Object-Oriented Code: Yes
-* Includes Media (Images, Icons, Etc): No
+* Includes Media (images, icons, etc): No
 * Includes CSS: No
 * Database Storage: Yes
   * Transients: No
   * WP Options Table: Yes
   * Other Tables: No
   * Creates New Tables: No
+  * Creates New WP Cron Jobs: No
 * Database Queries: Backend Only (Options API)
 * Must-Use Support: [Yes](https://github.com/littlebizzy/autoloader)
 * Multisite Support: No
 * Uninstalls Data: Yes
-
-#### Inspiration ####
-
-* [Jeff Matson](https://jeffmatson.net/stopping-cart-fragments-from-updating-in-woocommerce/)
-* [GitHub #9365](https://github.com/woocommerce/woocommerce/issues/9365)
-* [GitHub #7777](https://github.com/woocommerce/woocommerce/issues/7777)
 
 #### Special Thanks ####
 
@@ -80,16 +86,33 @@ For initial release we've implemented via dequeue rather than print scripts, wil
 
 #### Disclaimer ####
 
-We released this plugin in response to our managed hosting clients asking for better access to their server, and our primary goal will remain supporting that purpose. Although we are 100% open to fielding requests from the WordPress community, we kindly ask that you keep the above-mentioned goals in mind... thanks!
+We released this plugin in response to our managed hosting clients asking for better access to their server, and our primary goal will remain supporting that purpose. Although we are 100% open to fielding requests from the WordPress community, we kindly ask that you keep these conditions in mind, and refrain from slandering, threatening, or harassing our team members in order to get a feature added, or to otherwise get "free" support. The only place you should be contacting us is in our free [**Facebook group**](https://www.facebook.com/groups/littlebizzy/) which has been setup for this purpose, or via GitHub if you are an experienced developer. Thank you!
+
+#### Our Philosophy ####
+
+> "Decisions, not options." -- WordPress.org
+
+> "Everything should be made as simple as possible, but not simpler." -- Albert Einstein, et al
+
+> "Write programs that do one thing and do it well... write programs to work together." -- Doug McIlroy
+
+> "The innovation that this industry talks about so much is bullshit. Anybody can innovate... 99% of it is 'Get the work done.' The real work is in the details." -- Linus Torvalds
+
+#### Search Keywords ####
+
+cart, cart ajax, cart fragments, disable cart ajax, disable cart fragments, slow woocommerce, speed up woocommerce, woocommerce loading speed, woocommerce performance, woocommerce speed
 
 == Installation ==
 
 1. Upload to `/wp-content/plugins/disable-cart-fragments-littlebizzy`
 2. Activate via WP Admin > Plugins
-3. Test the plugin by refreshing pages and checking source code after clearing caches
+3. Test the plugin is working:
+
+After plugin activation, purge all caches. Then, check your source code to verify cart fragment scripting no longer appears.
+
 4. To disable cart fragments on specific posts/pages (using their ID), refer to below defined constant:
 
-    define('DISABLE_CART_FRAGMENTS', '123,456,789');
+    define('DISABLE_CART_FRAGMENTS', '1,2,3,4,5,6,7,8,9');
 	
 == Frequently Asked Questions ==
 
@@ -107,9 +130,13 @@ This plugin does not have a settings page and is designed for speed and simplici
 
 = I have a suggestion, how can I let you know? =
 
-Please avoid leaving negative reviews in order to get a feature implemented. Instead, we kindly ask that you post your feedback on the wordpress.org support forums by tagging this plugin in your post. If needed, you may also contact our homepage.
+Please avoid leaving negative reviews in order to get a feature implemented. Instead, join our free Facebook group.
 
 == Changelog ==
+
+= 1.3.0 =
+* tested with WP 5.0
+* updated plugin meta
 
 = 1.2.1 =
 * fixed WC support header in plugin root file
@@ -128,11 +155,12 @@ Please avoid leaving negative reviews in order to get a feature implemented. Ins
 
 = 1.1.0 =
 * tested with WC 3.4
+* tested with PHP 7.0
 * tested with PHP 7.1
 * tested with PHP 7.2
-* tested with alleged conflicting plugins e.g. *WooCommerce Cart*, *WooCommerce Better Usability*, etc (no issues found)
-* uses PHP namespaces
-* object-oriented codebase
+* tested with alleged conflicting plugins e.g. *WooCommerce (Side) Cart*, *WooCommerce Better Usability*, etc (no issues found)
+* plugin re-written using PHP namespaces
+* plugin uses object-oriented codebase
 * optimized plugin code
 
 = 1.0.9 =
@@ -169,4 +197,3 @@ Please avoid leaving negative reviews in order to get a feature implemented. Ins
 
 = 1.0.0 =
 * initial release
-* tested with PHP 7.0
