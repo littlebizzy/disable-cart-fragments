@@ -8,7 +8,7 @@ Disables AJAX fragments in Woo
 - code entirely refactored to WordPress standards
 - removed support for per-page application (via defined constant)
 - inspired by Optimocha's approach, cart fragments are now conditionally injected when `woocommerce_cart_hash` cookie detected or add-to-cart button is clicked (event listener)
-- unlike Optimocha's plugin, ours does not re-check for the cookie every X seconds (use poorly coded plugins/themes that modify add-to-cart at your own risk, we don't want to add more overhead/fallback for now)
+- unlike Optimocha's plugin, ours does not re-check for the cookie every X seconds as a fallback method (this means use poorly coded plugins/themes that modify add-to-cart at your own risk, we don't want to add more overhead for now)
 - supports PHP 7.0 to PHP 8.3
 - supports Multisite
 
