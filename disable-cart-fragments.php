@@ -14,21 +14,21 @@ Primary Branch: master
 
 // prevent direct access
 if ( ! defined( 'ABSPATH' ) ) {
-    exit;
+	exit;
 }
 
 // disable wordpress.org updates for this plugin
 add_filter( 'gu_override_dot_org', function( $overrides ) {
-    $overrides[] = 'disable-cart-fragments/disable-cart-fragments.php';
-    return $overrides;
+	$overrides[] = 'disable-cart-fragments/disable-cart-fragments.php';
+	return $overrides;
 }, 999 );
 
-// disable WooCommerce cart fragments
+// disable woocommerce cart fragments
 add_action( 'wp_enqueue_scripts', function() {
-    if ( class_exists( 'WooCommerce' ) ) {
-        // dequeue cart fragment scripts
-        wp_dequeue_script( 'wc-cart-fragments' );
-    }
+	if ( class_exists( 'WooCommerce' ) ) {
+		// dequeue cart fragment scripts
+		wp_dequeue_script( 'wc-cart-fragments' );
+	}
 }, 11 );
 
 // Ref: ChatGPT
